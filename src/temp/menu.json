@@ -1,0 +1,126 @@
+[
+  {
+    "id": 0,
+    "title": "Máu",
+    "items": [
+      {
+        "title": "Đường huyết",
+        "id": 0
+      },
+      {
+        "title": "Cholesterol",
+        "id": 1
+      },
+      {
+        "title": "Triglyceride",
+        "id": 2
+      },
+      {
+        "title": "Tế bào máu",
+        "id": 3
+      },
+      {
+        "title": "Protein",
+        "id": 4
+      },
+      {
+        "title": "Enzyme",
+        "id": 5
+      },
+      {
+        "title": "Hormone",
+        "id": 6
+      },
+      {
+        "title": "Huyết thanh",
+        "id": 7
+      },
+      {
+        "title": "Tổng quát",
+        "id":8
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Nước tiêu",
+    "items": [
+      {
+        "title": "Protein",
+        "id": 0
+      },
+      {
+        "title": "Đường",
+        "id": 1
+      },
+      {
+        "title": "Muối",
+        "id": 2
+      },
+      {
+        "title": "Chất phân hủy",
+        "id": 3
+      },
+      {
+        "title": "Tổng quát",
+        "id": 4
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Chức năng gan",
+    "items": [
+      {
+        "title": "Enzyme gan",
+        "id": 0
+      },
+      {
+        "title": "Bilirubin",
+        "id": 1
+      },
+      {
+        "title": "Albumin",
+        "id": 2
+      },
+      {
+        "title": "Protrombin",
+        "id": 3
+      },
+      {
+        "title": "Tổng quát",
+        "id": 4
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Thần kinh",
+    "items": [
+      {
+        "title": "Điện não đồ",
+        "id": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gen",
+    "items": [
+      {
+        "title": "Điện não đồ",
+        "id": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Khác",
+    "items": [
+      {
+        "title": "Siêu âm",
+        "id": 0
+      }
+    ]
+  }
+]

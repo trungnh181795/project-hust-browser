@@ -1,0 +1,208 @@
+@mixin flexcenterrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flexcentercolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.patient-card-list-wrapper {
+    position: relative;
+    // background: linear-gradient(45deg, #b6ced6 0%, #e7b8b6 100%);
+    // background: linear-gradient(90deg, #bbd0d7 0%, #d6b8b6 100%);
+    // z-index:-2;
+    margin-top: -50px;
+    padding-top: 50px;
+
+    .doctorRecordBg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: none;
+    }
+}
+
+.patientList {
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(90deg, #1d4350 0%, #a43931 100%);
+}
+
+.patient-card-list-title {
+    font-family: Raleway;
+    text-transform: uppercase;
+    margin: 3rem;
+}
+
+.profile-contentinfo-item-patient {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+
+    &:nth-child(even) {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .profile-patient-textdetail {
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .profile-patient-text-carry {
+            text-align: left;
+            margin: 0;
+            padding: 0.5rem;
+            color: white;
+        }
+
+        .profile-patient-avatar {
+            margin: 0.3rem;
+            margin-left: 0.5rem;
+        }
+
+        .profile-patient-in {
+            padding: 0.5rem;
+        }
+    }
+}
+
+.profile-patient-in {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.profile-patient-avatar {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.25);
+    border: 3px solid black;
+    border-radius: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.profile-patient-text-carry {
+    margin-left: 20px;
+    height: 100%;
+    @include flexcentercolumn;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.profile-patient-text {
+    color: white;
+    font-family: BeVietNam;
+    font-size: 1.1rem;
+}
+
+.profile-patient-textdetail {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-patient-video-call {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(25, 152, 255);
+    }
+}
+
+.experiment {
+    .carousel {
+        margin: 1rem auto;
+        width: 50%;
+
+        @media only screen and (max-width: 600px) {
+            width: 95%;
+        }
+
+        .item {
+            padding: 1rem;
+
+            .img_item {
+                width: 100%;
+                box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.452);
+                border: 5px solid white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+/* CSS */
+.button-62 {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    width: 180px;
+    height: 50px;
+}
+
+.button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}

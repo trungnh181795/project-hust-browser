@@ -1,0 +1,149 @@
+@mixin roundborder {
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    font-size: 1.2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.patient-info-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: Raleway;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ant-table-thead {
+    display: none;
+}
+
+.patient-info-container {
+    margin: auto;
+    max-width: 1700px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+
+    @media (max-width: 500px) {
+        padding: 0px;
+    }
+}
+
+.patient-info-detail {
+    // @include roundborder;
+    margin: auto;
+    max-width: 600px;
+}
+
+.patient-info-right-content {
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-info-sub-info {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-grow: 2;
+    flex-basis: 200px;
+    margin-bottom: 2rem;
+}
+
+@mixin gradientBox {
+    padding: 1rem;
+    // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    // background: rgb(157, 104, 255);
+    // background: linear-gradient(45deg, rgb(167, 119, 255) 0%, rgba(255, 159, 192, 1) 100%);
+    background: #1D4350;
+    background: linear-gradient(45deg, #1D4350 0%, #A43931 100%, );
+    h1 {
+        color: white;
+    }
+}
+
+.patient-info-Exercises {
+    @include gradientBox;
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin-right: 1rem;
+
+    @media (max-width: 867px) {
+        max-width: 100vw;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    padding:0 !important;
+    max-height: 530px;
+    overflow-y:scroll;
+}
+
+.patient-info-medicine {
+    @include gradientBox;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.patient-info-stats-normal {
+    @include roundborder;
+    background-color: #2ecc71;
+    height: 120px;
+    min-width: 180px;
+    color: white;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+
+.patient-info-stats-danger {
+    @include roundborder;
+    // background-color: #f64747;
+    // color: white;
+    height: 120px;
+    min-width: 180px;
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+
+.patient-info-graph-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+.graph_container {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem auto;
+    background: rgb(157, 104, 255);
+    background: linear-gradient(45deg, rgb(167, 119, 255) 0%, rgba(255, 159, 192, 1) 100%);
+    box-shadow: 5px 5px 15px 1px rgba(216, 119, 255, 0.514);
+
+    .recharts-tooltip-wrapper {
+        margin-bottom: 2rem !important;
+    }
+}
+
+.patient-info-graph {
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 1);
+    height: 500px;
+}
+
+
+
+.custom-tooltip {
+    border: 1px solid;
+    border-color: #c7c7c7;
+    background-color: white;
+    text-align: left;
+    padding: 7px 7px 0 7px;
+}
